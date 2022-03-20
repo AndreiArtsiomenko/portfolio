@@ -93,6 +93,7 @@ h3 {
   }
 }
 
+
 /*--------------------LIGHT-THEME--------------------------------------*/
 
 .main__skills.light-theme,
@@ -162,13 +163,13 @@ h3 {
 }
 
 @media (max-width: 768px) {
-
   .btn-gold,
   .portfolio-btn {
     min-width: 219px;
     min-height: 54px;
   }
 }
+
 
 /*--------------------HEADER--------------------------------------*/
 
@@ -291,6 +292,7 @@ h3 {
   height: 100%;
 }
 
+
 /*--------------------HEADER(adaptive)--------------------------------------*/
 
 @media (max-width: 768px) {
@@ -299,24 +301,19 @@ h3 {
     padding-right: 64px;
     background-image: url('../assets/img/bg-tablet.jpg');
   }
-
   .header__logo {
     order: 0;
   }
-
   .header__switch-lng {
     margin-left: auto;
     order: 1;
   }
-
   .header__theme {
     order: 1;
   }
-
   .switch-lng__btn {
     font-weight: 700;
   }
-
   .nav__icon {
     position: relative;
     z-index: 10;
@@ -327,7 +324,6 @@ h3 {
     cursor: pointer;
     order: 2;
   }
-
   .nav__icon::before,
   .nav__icon::after,
   .nav__icon span {
@@ -338,40 +334,31 @@ h3 {
     transition: all 0.5s ease 0s;
     background-color: var(--color-white);
   }
-
   .nav__icon::before,
   .nav__icon::after {
     content: "";
   }
-
   .nav__icon::before {
     top: 0;
   }
-
   .nav__icon::after {
     bottom: 0;
   }
-
   .nav__icon span {
     top: 50%;
     transform: scale(1) translate(0px, -50%);
   }
-
   .nav__icon.open span {
     transform: scale(0) translate(0px, -50%);
   }
-
   .nav__icon.open::before {
     top: 50%;
     transform: rotate(-45deg) translate(0, -50%);
   }
-
   .nav__icon.open::after {
     top: 50%;
     transform: rotate(45deg) translate(0, -50%);
   }
-
-
   .header__nav {
     position: fixed;
     top: 0;
@@ -382,17 +369,14 @@ h3 {
     padding: 134px 30px 30px 127px;
     transition: all 0.5s ease 0s;
   }
-
   .nav__link {
     font-size: 35px;
     line-height: 73px;
   }
-
   .header__nav.open {
     background-color: var(--color-black);
     right: 0px;
   }
-
   .nav__list {
     flex-direction: column;
   }
@@ -404,11 +388,13 @@ h3 {
   }
 }
 
+
 /*--------------------MAIN--------------------------------------*/
 
 .main {
   flex: 1 1 auto;
 }
+
 
 /*--------------------MAIN(HERO)--------------------------------------*/
 
@@ -434,6 +420,7 @@ h3 {
   padding: 10px 0 25px;
 }
 
+
 /*--------------------MAIN(HERO)(adaptive)--------------------------------------*/
 
 @media (max-width: 768px) {
@@ -443,23 +430,21 @@ h3 {
     padding-bottom: 152px;
     background-image: url('../assets/img/bg-tablet.jpg');
   }
-
   .hero__body {
     max-width: 390px;
   }
-
   .hero__title {
     margin-bottom: 20px;
     font-size: 32px;
     font-weight: 400;
   }
-
   .hero__text {
     padding: 0;
     margin-bottom: 60px;
     line-height: 24px;
   }
 }
+
 
 /*--------------------MAIN(SKILLS)--------------------------------------*/
 
@@ -525,6 +510,7 @@ h3 {
   text-align: center;
 }
 
+
 /*--------------------MAIN(SKILLS)(adaptive)--------------------------------------*/
 
 @media (max-width: 1200px) {
@@ -539,28 +525,23 @@ h3 {
     width: 56%;
     padding-top: 80px;
   }
-
   .title-section {
     font-size: 32px;
     line-height: 2.5;
   }
-
   .skills__items {
     padding-top: 15px;
     padding-bottom: 70px;
     margin-left: 0px;
     margin-right: 0px;
   }
-
   .item__skill {
     padding: 80px 13px 9px;
   }
-
   .item__skill:nth-child(3),
   .item__skill:nth-child(4) {
     margin-top: 68px;
   }
-
   .item__text {
     padding: 20px 0 0;
     font-size: 18px;
@@ -568,6 +549,18 @@ h3 {
     line-height: 22px;
   }
 }
+
+@media (max-width: 605px) {
+  .skills__items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .item__skill {
+    max-width: 320px;
+    margin-top: 50px;
+  }
+}
+
 
 /*--------------------MAIN(PORTFOLIO)--------------------------------------*/
 
@@ -586,17 +579,18 @@ h3 {
   gap: 25px 25px;
 }
 
+
 /*--------------------MAIN(PORTFOLIO)(adaptive)--------------------------------------*/
 
 @media (max-width: 768px) {
   .portfolio__buttons {
     padding: 51px 0;
   }
-
   .portfolio__items {
     margin-top: 10px;
   }
 }
+
 
 /*--------------------MAIN(VIDEO)--------------------------------------*/
 
@@ -635,6 +629,7 @@ h3 {
   filter: invert(26%) sepia(18%) saturate(529%) hue-rotate(7deg) brightness(90%) contrast(94%);
 }
 
+
 /*--------------------MAIN(VIDEO)(adaptive)--------------------------------------*/
 
 @media (max-width: 768px) {
@@ -643,13 +638,13 @@ h3 {
     margin-right: -94px;
     padding-bottom: 5px;
   }
-
   .player-video__button {
     min-height: 65px;
     min-width: 65px;
     left: 350px;
   }
 }
+
 
 /*--------------------MAIN(PRICE)--------------------------------------*/
 
@@ -698,26 +693,25 @@ h3 {
   padding-bottom: 40px;
 }
 
+
 /*--------------------MAIN(PRICE)(adaptive)--------------------------------------*/
 
 @media (max-width: 768px) {
   .price__row {
     justify-content: center;
   }
-
   .price__column {
     flex: 0 1 67%;
     margin-bottom: 50px;
   }
-
   .price__column:last-child {
     margin-bottom: 0px;
   }
-
   .price__column:first-child {
     margin-top: -8px;
   }
 }
+
 
 /*--------------------MAIN(CONTACT)--------------------------------------*/
 
@@ -780,6 +774,7 @@ textarea.input {
   margin-top: 30px;
 }
 
+
 /*--------------------MAIN(CONTACT)(adaptive)--------------------------------------*/
 
 @media (max-width: 768px) {
@@ -791,16 +786,13 @@ textarea.input {
     background-size: auto 600px;
     background-image: url('../assets/img/contacts-tablet.png');
   }
-
   .contacts__title {
     margin-bottom: 10px;
     font-size: 32px;
   }
-
   .contacts__body {
     text-align: center;
   }
-
   .contacts__form {
     margin-top: 40px;
   }
@@ -812,7 +804,9 @@ textarea.input {
   }
 }
 
+
 /*--------------------FOOTER--------------------------------------*/
+
 .footer__container {
   background-color: var(--color-black);
 }
@@ -895,6 +889,7 @@ textarea.input {
   height: 100%;
 }
 
+
 /*--------------------FOOTER(adaptive)--------------------------------------*/
 
 @media (max-width: 768px) {
@@ -904,12 +899,10 @@ textarea.input {
     align-items: center;
     padding-top: 17px;
   }
-
   .school {
     margin-top: -10px;
     padding-left: 5px;
   }
-
   .social__row {
     padding: 16px 0 1px 1px;
   }
