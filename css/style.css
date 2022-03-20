@@ -594,14 +594,6 @@ h3 {
 
 /*--------------------MAIN(VIDEO)--------------------------------------*/
 
-.logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .player-video__body {
   padding-top: 60px;
 }
@@ -641,7 +633,6 @@ h3 {
   .player-video__button {
     min-height: 65px;
     min-width: 65px;
-    left: 350px;
   }
 }
 
